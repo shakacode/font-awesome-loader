@@ -7,8 +7,6 @@ Font awesome configuration and loading package for webpack, using font-awesome (
 ## NEWS
 2016-02-28: FIRST ALPHA RELEASE! See example usage at [bootstrap-loader/pull/56](https://github.com/shakacode/bootstrap-loader/pull/56).
 
-## Usage
-
 Usage
 -----
 
