@@ -1,11 +1,13 @@
 font-awesome-loader
 ====================
-
-FIRST ALPHA RELEASE
-
 Font awesome configuration and loading package for webpack, using font-awesome (Sass).
 
-Based on bootstrap-webpack by Scott Bleck (@bline) and font-awesome-webpack (gowravshekar)
+
+
+## NEWS
+2016-02-28: FIRST ALPHA RELEASE! See example usage at [bootstrap-loader/pull/56](https://github.com/shakacode/bootstrap-loader/pull/56).
+
+## Usage
 
 Usage
 -----
@@ -118,3 +120,8 @@ module.exports = {
 ```
 
 Install `extract-text-webpack-plugin` before using this configuration.
+
+
+## Credits
+
+- Based on font-awesome-webpack (gowravshekar)
