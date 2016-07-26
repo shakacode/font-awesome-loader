@@ -2,10 +2,7 @@ font-awesome-loader
 ====================
 Font awesome configuration and loading package for webpack, using font-awesome (Sass).
 
-
-
-## NEWS
-2016-02-28: FIRST ALPHA RELEASE! See example usage at [bootstrap-loader/pull/56](https://github.com/shakacode/bootstrap-loader/pull/56).
+See example usage at [shakacode/bootstrap-loader](https://github.com/shakacode/bootstrap-loader) in the [examples](https://github.com/shakacode/bootstrap-loader/tree/master/examples).
 
 Usage
 -----
