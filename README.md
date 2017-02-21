@@ -57,14 +57,19 @@ Add both files *next to each other* in your project. Then:
 require("font-awesome-loader!./path/to/font-awesome.config.js");
 ```
 
-Or simple add it as entry point to your `webpack.config.js`:
+Or add it to your `webpack.config.js`:
 
 ``` javascript
 module.exports = {
-  entry: [
-    "font-awesome-loader!./path/to/font-awesome.config.js",
-    "your-existing-entry-point"
-  ]
+  ...
+  module: [{
+      test: /font-awesome\.config\.js/,
+      use: [
+        { loader: "style-loader" },
+        { loader: "font-awesome-loader" }
+      ]
+  }]
+  ...
 };
 ```
 
@@ -101,20 +106,23 @@ $fa-border-color: #ddd;
 
 ### extract-text-webpack-plugin
 
-Configure style loader in `font-awesome.config.js`.
+Configure style loader in `webpack.config.js`.
 
 Example:
 
 ``` javascript
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 module.exports = {
-  styleLoader: require('extract-text-webpack-plugin').extract('style-loader', 'css-loader!sass-loader'),
-  styles: {
-    ...
-  }
+  module: [{
+      test: /\.s?css/,
+      use: ExtractTextPlugin.extract('style-loader', 'css-loader!sass-loader')
+  }]
 };
 ```
 
 Install `extract-text-webpack-plugin` before using this configuration.
+[Here is an example](https://github.com/pksjce/font-awesome-test) of setting up `extract-text-webpack-plugin` with `font-awesome-loader`
 
 
 ## Credits
