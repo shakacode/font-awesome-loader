@@ -1,4 +1,4 @@
-# Setup for Webpack 1
+# Setup for Webpack 2
 
 To properly load font-awesome fonts, you need to install font-awesome as dependencies
 
@@ -56,7 +56,7 @@ module.exports = {
 };
 ```
 
-### Custom configuration
+## Custom configuration
 
 You can configurate font-awesome build result with two configuration files:
 
@@ -65,7 +65,7 @@ You can configurate font-awesome build result with two configuration files:
 
 Add both files *next to each other* in your project. Then:
 
-#### `font-awesome.config.js`
+### `font-awesome.config.js`
 
 Example:
 
@@ -104,7 +104,7 @@ module.exports = {
 };
 ```
 
-#### `font-awesome.config.scss`
+### `font-awesome.config.scss`
 
 Imported after Font-Awesome's default variables, but before anything else.
 
@@ -124,7 +124,7 @@ import 'font-awesome/scss/font-awesome.scss';
 import 'path/to/font-awesome.config.scss';
 ```
 
-#### extract-text-webpack-plugin
+### extract-text-webpack-plugin
 
 Install `extract-text-webpack-plugin` then add the plugin to extract css file. Example:
 
