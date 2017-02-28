@@ -130,6 +130,18 @@ Install `extract-text-webpack-plugin` then add the plugin to extract css file. E
 
 ``` javascript
 module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.s?css/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [ 'css-loader', 'sass-loader' ]
+        })
+      }
+    ],
+  },
+
   plugins: [
     new ExtractTextPlugin({
       filename: '[name]-[chunkhash].css', allChunks: true,
