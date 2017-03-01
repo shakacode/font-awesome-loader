@@ -4,13 +4,15 @@
   "description": "Example usage of font-awesome-loader in webpack v2",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -p 2735",
+    "start": "http-server -p 8080",
     "clean": "rm -rf assets/",
     "build": "npm run clean && webpack --config webpack.config.js"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Dion Dirza <dion.dirza@gmail.com>",
   "license": "ISC",
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  },
   "devDependencies": {
     "css-loader": "^0.26.2",
     "extract-text-webpack-plugin": "^2.0.0",
@@ -19,10 +21,7 @@
     "node-sass": "^4.5.0",
     "sass-loader": "^6.0.2",
     "style-loader": "^0.13.2",
-    "url-loader": "^0.5.8"
-  },
-  "dependencies": {
-    "font-awesome": "^4.7.0",
+    "url-loader": "^0.5.8",
     "webpack": "^2.2.1"
   }
 }
