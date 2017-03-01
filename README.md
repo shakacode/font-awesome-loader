@@ -17,4 +17,4 @@ See example usage at [shakacode/bootstrap-loader](https://github.com/shakacode/b
 
 ## Credits
 
-- Based on font-awesome-webpack (gowravshekar)
+* Based on font-awesome-webpack (gowravshekar)

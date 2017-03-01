@@ -83,7 +83,14 @@ module.exports = {
 };
 ```
 
-Add this rule in Webpack configuration to build font-awesome source
+Import it in application entry point. Example:
+
+``` javascript
+import 'font-awesome/scss/font-awesome.scss';
+import 'path/to/font-awesome.config';
+```
+
+And then add this rule in Webpack configuration to build font-awesome source
 
 ``` javascript
 module.exports = {
@@ -115,13 +122,6 @@ Example:
 ```scss
 $fa-inverse: #eee;
 $fa-border-color: #ddd;
-```
-
-and import in application entry point. Example:
-
-``` javascript
-import 'font-awesome/scss/font-awesome.scss';
-import 'path/to/font-awesome.config.scss';
 ```
 
 ### extract-text-webpack-plugin
