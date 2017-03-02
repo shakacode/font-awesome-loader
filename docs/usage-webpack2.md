@@ -4,7 +4,7 @@ To properly load font-awesome fonts, you need to install font-awesome as depende
 
 ``` console
 npm install --save font-awesome
-or
+# or
 yarn add font-awesome
 ```
 
