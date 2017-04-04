@@ -1,5 +1,7 @@
 # font-awesome-loader
 
+[![npm version](https://badge.fury.io/js/font-awesome-loader.svg)](https://badge.fury.io/js/font-awesome-loader)
+
 Font awesome configuration and loading package for webpack, using font-awesome (Sass).
 
 See example usage at [shakacode/bootstrap-loader](https://github.com/shakacode/bootstrap-loader) in the [examples](https://github.com/shakacode/bootstrap-loader/tree/master/examples).
