@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/font-awesome-loader.svg)](https://badge.fury.io/js/font-awesome-loader)
+
 font-awesome-loader
 ====================
 Font awesome configuration and loading package for webpack, using font-awesome (Sass).
