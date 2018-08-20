@@ -6,11 +6,12 @@ Font awesome configuration and loading package for webpack, using font-awesome (
 
 ## Usage
 
------
+---
 
-* [Webpack 1](/docs/usage-webpack1.md)
-* [Webpack 2](/docs/usage-webpack2.md)
+- [Webpack 1](/docs/usage-webpack1.md)
+- [Webpack 2](/docs/usage-webpack2.md)
+- [Webpack 4](/docs/usage-webpack4.md)
 
 ## Credits
 
-* Based on font-awesome-webpack (gowravshekar)
+- Based on font-awesome-webpack (gowravshekar)
