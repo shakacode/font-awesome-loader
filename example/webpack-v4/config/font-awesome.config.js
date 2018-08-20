@@ -1,7 +1,4 @@
 module.exports = {
-  // Default for the style loading
-  styleLoader: "style-loader!css-loader!sass-loader",
-
   styles: {
     animated: true,
     "bordered-pulled": true,
@@ -11,6 +8,7 @@ module.exports = {
     larger: true,
     list: true,
     mixins: true,
+    "rotated-flipped": true,
     "screen-reader": true,
     shims: true,
     stacked: true

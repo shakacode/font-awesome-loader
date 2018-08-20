@@ -1,0 +1,25 @@
+{
+  "name": "font-awesome-loader-example",
+  "version": "1.0.0",
+  "description": "Example usage of font-awesome-loader in webpack v2",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p 8080",
+    "clean": "rm -rf assets/",
+    "build": "npm run clean && webpack --config webpack.config.js"
+  },
+  "author": "Dion Dirza <dion.dirza@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^1.1.11",
+    "font-awesome-loader": "^1.0.2",
+    "mini-css-extract-plugin": "^0.4.1",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.22.1",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.16.5"
+  }
+}

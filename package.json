@@ -26,10 +26,10 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "font-awesome": "*",
     "css-loader": "*",
     "sass-loader": "*",
-    "style-loader": "*"
+    "style-loader": "*",
+    "@fortawesome/fontawesome-free": "*"
   },
   "homepage": "https://github.com/shakacode/font-awesome-loader"
 }
