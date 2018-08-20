@@ -84,7 +84,7 @@ module.exports = {
 Import it in application entry point. Example:
 
 ```javascript
-import "~@fortawesome/fontawesome-free/scss/all.scss";
+import "~@fortawesome/fontawesome-free/scss/font-awesome.scss";
 import "path/to/font-awesome.config";
 ```
 
