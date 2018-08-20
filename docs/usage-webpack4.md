@@ -1,11 +1,9 @@
-# Setup for Webpack 4
+# Setup for Webpack 4 and FontAwesome 5+
 
 To properly load font-awesome fonts, you need to install font-awesome as dependencies
 
 ```console
-npm install @fortawesome/fontawesome-free --save-dev
-# or
-yarn add font-awesome
+npm install @fortawesome/fontawesome-free --save
 ```
 
 Then add rules in Webpack configuration file to process it. Example:
@@ -42,14 +40,17 @@ The Regex for font types are adjusted to support these formats. Regex also suppo
 To use the complete font-awesome package including all styles with the default settings:
 
 ```javascript
-import "font-awesome/scss/font-awesome.scss";
+import "~@fortawesome/fontawesome-free/scss/font-awesome.scss";
 ```
 
 That code should be present in your application code(Entry file or any other file required in entry file) or add in an entry Webpack configuration file
 
 ```javascript
 module.exports = {
-  entry: ["font-awesome/scss/font-awesome.scss", "entry-file.js"]
+  entry: [
+    "~@fortawesome/fontawesome-free/scss/font-awesome.scss",
+    "entry-file.js"
+  ]
 };
 ```
 
@@ -83,7 +84,7 @@ module.exports = {
 Import it in application entry point. Example:
 
 ```javascript
-import "font-awesome/scss/font-awesome.scss";
+import "~@fortawesome/fontawesome-free/scss/all.scss";
 import "path/to/font-awesome.config";
 ```
 
@@ -121,29 +122,23 @@ $fa-inverse: #eee;
 $fa-border-color: #ddd;
 ```
 
-### extract-text-webpack-plugin
+### mini-css-extract-plugin
 
-Install `extract-text-webpack-plugin` then add the plugin to extract css file. Example:
+Install `mini-css-extract-plugin` then add the plugin to extract css file. Example:
 
 ```javascript
 module.exports = {
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: "bundle.css"
+    })
+  ],
   module: {
     rules: [
       {
-        test: /\.s?css/,
-        use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: ["css-loader", "sass-loader"]
-        })
+        test: /\.s?css$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
       }
-    ]
-  },
-
-  plugins: [
-    new ExtractTextPlugin({
-      filename: "[name]-[chunkhash].css",
-      allChunks: true
-    })
   ]
 };
 ```

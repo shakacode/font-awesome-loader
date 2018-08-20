@@ -1,4 +1,10 @@
-import 'font-awesome/css/font-awesome.css';
-import './config/font-awesome.config';
+import "@fortawesome/fontawesome-free/css/all.css";
+import "./config/font-awesome.config";
 
-document.body.innerHTML = '<i class="fa fa-call fa-inverse fa-5x" aria-hidden="true"></i>';
+const icon = document.createElement("i");
+const cl = ["fas", "fa-heart", "fa-5x"];
+for (let i in cl) {
+  icon.classList.add(cl[i]);
+}
+
+document.querySelector(".icon").appendChild(icon);
